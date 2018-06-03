@@ -37,3 +37,8 @@ h5 small{
     background-color: greenyellow;
     border-top: 1px solid #dcdccc;
 }
+mat-spinner{
+    position: fixed;
+    bottom:50%;
+    right:50%;
+}
