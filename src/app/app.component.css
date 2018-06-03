@@ -1,0 +1,11 @@
+.space{
+    flex: 1 1 auto;
+}
+
+[ng-reflect-router-link]{
+    cursor: pointer;
+}
+  
+[ng-reflect-router-link]:focus{
+    outline: 0!important;
+}

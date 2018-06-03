@@ -1,0 +1,39 @@
+.icon{
+    font-size: 38px;
+}
+h2{
+    margin: 0;
+}
+.answers{
+    padding: 12px;
+}
+.answers-list{
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 160px;
+}
+
+h5{
+    margin-bottom: 0;
+}
+
+h5 small{
+    font-weight: normal;
+    font-size: smaller;
+    color: rgba(0, 0, 0,.54);
+}
+
+.description{
+    margin-top: 6px;
+    padding-left: 6px;
+    border-left: 2px solid rgb(204, 11, 11);
+}
+.answer-form{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: greenyellow;
+    border-top: 1px solid #dcdccc;
+}

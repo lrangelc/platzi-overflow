@@ -1,4 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span [routerLink]="['/']">Platzi Overflow</span>
+    <span class="space"></span>
+    <mat-icon [routerLink]="['/signin']" class="example-icon">account_circle</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<!--
+<app-question-form></app-question-form>
+
+  <app-question-list></app-question-list>
+<app-signup-screen></app-signup-screen>
+
+  <app-question-detail></app-question-detail>
+  <app-signin-screen></app-signin-screen>
+  
+
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -17,4 +37,4 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-
+-->
