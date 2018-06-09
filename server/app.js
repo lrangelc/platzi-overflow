@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import {question} from './routes';
+import {question,auth} from './routes';
 
 const app = express();
 app.use(bodyParser.json());
@@ -18,5 +18,6 @@ if (process.env.NODE_ENV === 'development'){
 
 //app.get('/',(req,res) => res.send('Hola desde Express ' + new Date()));
 app.use('/api/questions',question);
+app.use('/api/auth',auth);
 
 export default app;
