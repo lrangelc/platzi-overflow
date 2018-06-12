@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
     providers:[QuestionService]
 })
 
-export class QuestionDetailComponent implements OnInit,OnDestroy {
+export class QuestionDetailComponent implements OnInit, OnDestroy {
     /*
     question: Question = new Question('Esta es una nueva pregunta sobre Android'
         ,'tengo una duda con una aplicacion que estoy desarrollando'

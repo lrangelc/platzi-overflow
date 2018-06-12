@@ -23,6 +23,7 @@ import {AuthService} from './auth/auth.service';
 import { MomentModule } from 'ngx-moment';
 
 import {Routing} from './app.routing';
+import { MatSnackBarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {Routing} from './app.routing';
     FormsModule,
     ReactiveFormsModule,
     Routing,
-    HttpModule
+    HttpModule,
+    MatSnackBarModule 
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
