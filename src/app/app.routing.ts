@@ -1,5 +1,5 @@
 import {Routes,RouterModule} from '@angular/router';
-import {QuestionListComponent} from './question/question-list.component';
+import {QuestionScreenComponent} from './question/question-screen.component';
 import {SigninScreenComponent} from './auth/signin-screen.component';
 import {SignupScreenComponent} from './auth/signup-screen.component';
 import {QUESTION_ROUTES} from './question/question.routing';
@@ -7,7 +7,7 @@ import {QUESTION_ROUTES} from './question/question.routing';
 const APP_ROUTES: Routes = [
     {
         path:'',
-        component: QuestionListComponent,
+        component: QuestionScreenComponent,
         pathMatch: 'full'
     },
     {

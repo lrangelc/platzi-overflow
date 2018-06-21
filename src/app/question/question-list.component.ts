@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Question } from './question.model';
 import {QuestionService} from './question.service';
 
@@ -23,12 +23,6 @@ const q = new Question('Como reutilizar un componente en Android?'
             padding:0 !important;
             font-size:48px !important;
         }
-        .add-question{
-            position: fixed;
-            bottom:30px;
-            right:30px;
-            font-size:32px;
-        }
         mat-spinner{
             position: fixed;
             bottom:50%;
@@ -45,13 +39,14 @@ export class QuestionListComponent implements OnInit{
 
     }
 
+    @Input() sort = '-createdAt';
     //questions: Question[] = new Array(10).fill(q);
     questions: Question[];
     loading = true;
 
     ngOnInit(){
         this.questionService
-            .getQuestions()
+            .getQuestions(this.sort)
             .then((questions: Question[]) => {
                 this.questions = questions;
                 this.loading = false;

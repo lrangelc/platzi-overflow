@@ -73,7 +73,6 @@ export class AuthService {
     }
 
     showError(message){
-        console.log('hol1');
         this.snackBar.open(message, 'x', {
             duration: 2500
           });
@@ -81,8 +80,14 @@ export class AuthService {
  
     public handleError = (error:any) => {
         console.log(error);
-        const {error: {name}, message} = error;
 
+        const {error: message} = error;
+        //if ("name" in error)
+        //{
+            //const {error: {name}, message} = error;
+            const {error: name} = error;
+        //}
+        
         this.showError('Tu sesion ha expirado.');
 
         if (name === 'TokenExpiredError'){

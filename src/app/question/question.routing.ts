@@ -1,11 +1,11 @@
-import {QuestionListComponent} from './question-list.component';
+import {QuestionScreenComponent} from './question-screen.component';
 import {QuestionDetailComponent} from './question-detail.component';
 import {QuestionFormComponent} from './question-form.component';
 
 export const QUESTION_ROUTES = [
     {
         path:'',
-        component:QuestionListComponent
+        component:QuestionScreenComponent
     },
     {
         path:'new',

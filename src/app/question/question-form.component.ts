@@ -63,9 +63,10 @@ export class QuestionFormComponent implements OnInit {
             form.value.iconK
         );
         console.log(q);
+        console.log('yeap');
         this.questionService.addQuestion(q)
             .subscribe(
-                ({id}) => this.router.navigate(['/questions',id]),
+                ({_id}) => this.router.navigate(['/questions',_id]),
                 this.authService.handleError
             );
     }

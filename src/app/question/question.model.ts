@@ -1,7 +1,7 @@
 import { Answer } from '../answer/answer.model';
 
 export class Question {
-    id?:string;
+    _id?:string;
     title:string;
     description:string;
     createdAt?:Date;
@@ -13,7 +13,7 @@ export class Question {
         ,createdAt?:Date
         ,icon?:string)
     {
-        this.id = '1';
+        this._id = '1';
         this.description = description;
         this.title = title;
         this.createdAt = createdAt;
